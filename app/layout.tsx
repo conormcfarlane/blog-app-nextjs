@@ -29,13 +29,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased p-4`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <header>
-            <NavBar />
-          </header>
-          <main> {children}</main>
-          <footer></footer>
-        </ThemeProvider>
+        <div className="max-w-160 mx-auto">
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <header className="mb-12">
+              <NavBar />
+            </header>
+            <main> {children}</main>
+            <footer></footer>
+          </ThemeProvider>
+        </div>
       </body>
     </html>
   );

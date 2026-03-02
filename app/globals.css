@@ -1,15 +1,16 @@
 @import "tailwindcss";
-
-:root {
-  --background: #e5e5e5;
-  --foreground: #171717;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #e5e5e5;
+  --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,10 +25,83 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .dark body {
   background: #0a0a0a;
 }
+p {
+  color: #525252;
+}
+.dark p {
+  color: #a3a3a3;
+}
+
 .border-container {
   border: 1px solid #424242;
   border-radius: 0.5rem;
+}
+/* Text Styles */
+.text-preset1 {
+  font-size: 2.5rem;
+  line-height: 130%;
+  letter-spacing: -1px;
+  font-weight: 800;
+}
+
+.text-preset2 {
+  font-size: 2rem;
+  line-height: 130%;
+  letter-spacing: -0.5px;
+  font-weight: 800;
+}
+
+.text-preset3 {
+  font-size: 2.5rem;
+  line-height: 130%;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.text-preset4 {
+  font-size: 1.5rem;
+  line-height: 130%;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+}
+
+.text-preset5 {
+  font-size: 1.25rem;
+  line-height: 130%;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+}
+.text-preset6 {
+  font-size: 1.125rem;
+  line-height: 150%;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+}
+.text-preset7 {
+  font-size: 1.125rem;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+  font-weight: 400;
+}
+.text-preset7SB {
+  font-size: 1.125rem;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+}
+.text-preset8 {
+  font-size: 1rem;
+  line-height: 130%;
+  letter-spacing: -0.2px;
+  font-style: italic;
+}
+.text-preset9 {
+  font-size: 1rem;
+  line-height: 146%;
+  letter-spacing: -0.4px;
+  font-weight: 400;
 }

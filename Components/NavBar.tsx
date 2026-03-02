@@ -40,7 +40,11 @@ export default function NavBar() {
           <div className="gap-6 mr-5 hidden md:flex">
             {sitePages.map((sitePage) => {
               return (
-                <Link key={sitePage.href} href={sitePage.href}>
+                <Link
+                  key={sitePage.href}
+                  href={sitePage.href}
+                  className={`${isPathEqual(sitePage.href) ? "border-b-2 border-b-blue-600" : ""}`}
+                >
                   {sitePage.name}
                 </Link>
               );
@@ -61,7 +65,7 @@ export default function NavBar() {
           </div>
 
           <button
-            className="p-2.5 border-container cursor-pointer dark:bg-black"
+            className="p-2.5 border-container cursor-pointer bg-white dark:bg-black"
             onClick={() => {
               setTheme(resolvedTheme === "dark" ? "light" : "dark");
               console.log(resolvedTheme);
