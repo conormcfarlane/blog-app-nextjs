@@ -36,7 +36,7 @@ export default function page() {
     setEmail(""); // Clear input
   };
   return (
-    <section className="space-y-4 m-2.5">
+    <section className="space-y-4">
       <h2 className="text-preset2">Newsletter</h2>
       <p className="text-preset7">
         Want to stay updated on my latest articles, coding tutorials, and

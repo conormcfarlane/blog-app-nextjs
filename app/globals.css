@@ -37,9 +37,10 @@ p {
 }
 
 .border-container {
-  border: 1px solid #424242;
+  border: 1px solid #a1a1aa;
   border-radius: 0.5rem;
 }
+
 /* Text Styles */
 .text-preset1 {
   font-size: 2.5rem;

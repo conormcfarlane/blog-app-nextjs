@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 import NavBar from "@/Components/NavBar";
 import { ThemeProvider } from "next-themes";
+import logoX from "../public/images/logo-x.svg";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,17 +27,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="h-screen">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased p-4`}
       >
         <div className="max-w-160 mx-auto">
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <header className="mb-12">
+            <header className="-mx-2">
               <NavBar />
             </header>
-            <main> {children}</main>
-            <footer></footer>
+            <div className="border border-neutral-400 border-t-0 px-2.5 min-h-screen flex flex-col ">
+              <main className=" pt-8 grow"> {children}</main>
+              <footer className="flex justify-between ">
+                <p>Made with ☕</p>
+                <div className="flex">
+                  <Image src={logoX} alt="X link and logo"></Image>
+                  <Image src={logoX} alt="X link and logo"></Image>
+                  <Image src={logoX} alt="X link and logo"></Image>
+                  <Image src={logoX} alt="X link and logo"></Image>
+                </div>
+              </footer>
+            </div>
           </ThemeProvider>
         </div>
       </body>
