@@ -43,7 +43,7 @@ export default function NavBar() {
                 <Link
                   key={sitePage.href}
                   href={sitePage.href}
-                  className={`${isPathEqual(sitePage.href) ? "border-b-2 border-b-blue-600" : ""}`}
+                  className={` ${isPathEqual(sitePage.href) ? "border-b-2 border-b-blue-600" : ""}`}
                 >
                   {sitePage.name}
                 </Link>
@@ -87,7 +87,7 @@ export default function NavBar() {
               <Link
                 key={sitePage.href}
                 href={sitePage.href}
-                className={`py-2 ${sitePage.name != "Newsletter" ? "border-b border-[#424242]" : ""}`}
+                className={`py-2 text-preset7 ${sitePage.name != "Newsletter" ? "border-b border-[#424242]" : ""} ${isPathEqual(sitePage.href) ? "text-preset7SB dark:text-white" : ""} dark:text-neutral-400`}
               >
                 {sitePage.name}
               </Link>
