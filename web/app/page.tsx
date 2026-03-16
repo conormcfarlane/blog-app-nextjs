@@ -1,4 +1,5 @@
 import Image from "next/image";
+import LatestProjects from "@/Components/LatestProjects";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
             <span className="italic font-bold">Sanity</span> as a headless CMS
             to manage the content.
           </p>
+        </div>
+        <div>
+          <LatestProjects />
         </div>
       </section>
     </div>

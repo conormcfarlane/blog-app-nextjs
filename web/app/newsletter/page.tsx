@@ -37,7 +37,7 @@ export default function page() {
   };
   return (
     <section className="space-y-4">
-      <h2 className="text-preset2">Newsletter</h2>
+      <h2 className="text-preset2 dark:text-white">Newsletter</h2>
       <p className="text-preset7">
         Want to stay updated on my latest articles, coding tutorials, and
         personal adventures? Sign up for my newsletter! It’s a simple way to
