@@ -39,10 +39,9 @@ export default function page() {
     <section className="space-y-4">
       <h2 className="text-preset2 dark:text-white">Newsletter</h2>
       <p className="text-preset7">
-        Want to stay updated on my latest articles, coding tutorials, and
-        personal adventures? Sign up for my newsletter! It’s a simple way to
-        keep track of new posts and occasional coding tips I discover. Just drop
-        your email in the sign-up box, and I’ll send you updates whenever
+        Want to stay updated on my latest projects and personal adventures? Sign
+        up for my newsletter! It’s a simple way to keep track of new posts. Just
+        drop your email in the sign-up box, and I’ll send you updates whenever
         there’s something new to share.
       </p>
       <p className="text-preset5">
